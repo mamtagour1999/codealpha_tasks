@@ -1,4 +1,5 @@
 Docker Nginx Web Server - Custom Static Page
+
 This project demonstrates how to create a custom Nginx web server using Docker. It includes a custom index.html file that replaces the default Nginx welcome page. The goal is to understand how to package a basic web page with Nginx into a Docker image and run it as a container.
 
 Tools & Technologies Used:
