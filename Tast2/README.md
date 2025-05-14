@@ -1,42 +1,61 @@
-Docker Nginx Web Server - Custom Static Page
+                           ****this is for Task-2****
 
-This project demonstrates how to create a custom Nginx web server using Docker. It includes a custom index.html file that replaces the default Nginx welcome page. The goal is to understand how 
-to package a basic web page with Nginx into a Docker image and run it as a container.
+               Jenkins Remote Agent Setup - CI/CD Pipeline
 
-👍Tools & Technologies Used:
+           Project Overview
+This project involves setting up a Jenkins-based Continuous Integration/Continuous Deployment (CI/CD) pipeline with a remote Jenkins agent. The purpose of this setup is to automate the process of building, testing, and deploying Java applications using Jenkins. The remote agent is configured to offload the build process from the Jenkins master, ensuring efficient resource utilization.
+************************************************************************************************************************************************
+Technologies Used
+Jenkins: Automation server for continuous integration and deployment.
 
-Docker
-Nginx (Official Image)
+Java: Used for backend development.
 
-Bash Script (run-container.sh)
+Git: Version control system to manage the project’s source code.
 
-HTML (Static Page)
+Maven: Dependency management and build tool for Java projects.
 
-Linux (Ubuntu-based)
+Docker: Containerization of Jenkins agent for scalable builds.
 
-👍Project Contents:
+GitHub: Repository hosting for version control.
 
-Dockerfile: Instructions to build the custom image using Nginx.
+Windows Subsystem for Linux (WSL): Running Jenkins in a Windows environment.
+****************************************************************************************************************************************
+Project Setup
+1. Jenkins Master & Remote Agent Setup
+Jenkins Master: The main server running the Jenkins instance to control the build pipeline.
 
-index.html: A simple custom HTML file that will be served by Nginx.
+Jenkins Remote Agent: A separate machine (or container) that connects to the Jenkins master to run the build process. This offloads the work from the master server to ensure smoother builds.
 
-run-container.sh: A shell script to run the Docker container easily.
+2. Steps to Configure Jenkins Master & Remote Agent
+Install Jenkins on your local or remote server.
 
-👍How It Works:
+Set up Java and Maven on both the Jenkins master and agent machines.
 
-The Dockerfile uses the official nginx:latest image.
+Configure the Remote Agent:
 
-The custom index.html is copied to the Nginx default HTML directory.
+Go to Manage Jenkins → Manage Nodes and Clouds.
 
-When the container is run, the Nginx server serves the custom page on port 8080.
+Add a new node and configure it as a remote agent.
 
-You can access the web page by visiting http://localhost:8080 in your browser.
-![image](https://github.com/user-attachments/assets/0a6a3ca5-51b1-4274-9907-13cd9dcbf344)
-![image](https://github.com/user-attachments/assets/943761a3-e272-4f5b-b606-4946cc2f691b)
-![image](https://github.com/user-attachments/assets/64f496aa-9013-43a6-856e-c36388d77b0d)
-![image](https://github.com/user-attachments/assets/d0078908-9ef9-44ee-be56-1ed65ee6296b)
-![image](https://github.com/user-attachments/assets/9313159f-49fa-4ff9-a7ac-2630791b7e8f)
+Use SSH or Jenkins agent jar file for agent connection.
 
+Ensure the agent is running and connected to the Jenkins master.
+************************************************************************************************************************************************
+![image](https://github.com/user-attachments/assets/1afccce2-8a60-47dc-af6d-9d02453ba94c)
+![image](https://github.com/user-attachments/assets/0671792a-c222-466b-95fe-0af241933efe)
+![image](https://github.com/user-attachments/assets/2eac8b49-e39d-4c3e-9beb-eae1f4fe64c9)
+![image](https://github.com/user-attachments/assets/02888f1e-431f-4fb0-98d3-a577aeec34db)
+![image](https://github.com/user-attachments/assets/44c2d619-577f-4034-b1d4-ca353385d267)
+![image](https://github.com/user-attachments/assets/5305d56c-1733-4c7d-a7ad-d7b66ab62478)
+![image](https://github.com/user-attachments/assets/06b0b3d3-8c57-4eff-9b36-2aaf53afbd56)
+![image](https://github.com/user-attachments/assets/e598aedc-a025-4d25-995b-eccd35daae6c)
+![image](https://github.com/user-attachments/assets/42691bb3-26ae-4f62-9e30-671ee4fc9603)
+![image](https://github.com/user-attachments/assets/1c0695be-d60a-4a23-8874-cb2e259d0423)
+![image](https://github.com/user-attachments/assets/3b550454-ae58-4b4a-9809-d76d03e28ea7)
+![image](https://github.com/user-attachments/assets/ea98d0fc-3a8e-482b-95d7-9f2d06952051)
+![image](https://github.com/user-attachments/assets/0a2e0260-25c0-4bd7-bfb0-737dac90248d)
+![image](https://github.com/user-attachments/assets/dea9efa4-e908-47cf-b2ea-4e2f772e7263)
+FINISHED ********
 
 
 
